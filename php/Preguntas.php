@@ -64,18 +64,36 @@
             $horario = $_POST["horario"];
             $comentario = $_POST["comentario"];
 
-            // Verificar si todos los campos están completados
-            if (!empty($nombre) && !empty($apellido) && !empty($sexo) && !empty($contacto) && !empty($horario)) {
-                // Procesar el formulario y enviar el correo, guardar en la base de datos, etc.
-        
-                // Redirigir al usuario a una página de éxito o mostrar un mensaje de éxito en la misma página
+            // Configuración de la conexión a la base de datos
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "yuliana";
+
+            // Crear la conexión
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Verificar si la conexión es exitosa
+            if ($conn->connect_error) {
+                die("Error al conectar a la base de datos: " . $conn->connect_error);
+            }
+
+            // Crear la consulta SQL para insertar los datos en la tabla
+            $sql = "INSERT INTO formulario (nombre, apellido, sexo, contacto, horario, comentario)
+            VALUES ('$nombre', '$apellido', '$sexo', '$contacto', '$horario', '$comentario')";
+
+            // Ejecutar la consulta
+            if ($conn->query($sql) === TRUE) {
                 echo "<p class='success-message'>¡Gracias por enviar el formulario!</p>";
             } else {
-                // Algunos campos no han sido completados, mostrar un mensaje de error
-                echo "<p class='error-message'>Por favor, completa todos los campos obligatorios.</p>";
+                echo "<p class='error-message'>Error al enviar el formulario: " . $conn->error . "</p>";
             }
+
+            // Cerrar la conexión
+            $conn->close();
         }
         ?>
+
 
     </div>
 </body>
