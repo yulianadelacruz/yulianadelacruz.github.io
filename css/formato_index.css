@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/flores.jpg); /* Imagen de fondo del cuerpo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: #FFD3E6; /* Color de fondo del encabezado */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #000000; /* Color del texto de los enlaces en el menú */
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.menu li a:hover {
+  color: #333333; /* Color del texto de los enlaces al pasar el cursor por encima */
+}
+
+.menu li:nth-child(1) a:hover {
+  color: #FF0000; /* Color del texto del primer enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(2) a:hover {
+  color: #00FF00; /* Color del texto del segundo enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(3) a:hover {
+  color: #0000FF; /* Color del texto del tercer enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(4) a:hover {
+  color: #FF00FF; /* Color del texto del cuarto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(5) a:hover {
+  color: #FFFF00; /* Color del texto del quinto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(6) a:hover {
+  color: #00FFFF; /* Color del texto del sexto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(7) a:hover {
+  color: #FF8000; /* Color del texto del séptimo enlace al pasar el cursor por encima */
+}
+
+.content {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco ligeramente transparente */
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 48px; /* Tamaño de la fuente más grande */
+  color: #ff0000e3; /* Color del título */
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 24px; /* Tamaño de la fuente más grande */
+  color: #333333; /* Color del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.content img {
+  max-width: 50%; /* Tamaño de la imagen más pequeño */
+  height: auto;
+  margin-top: -68px; /* Espacio superior entre la imagen y el texto */
+  margin-bottom: 30px; /* Espacio inferior entre la imagen y el texto */
+}

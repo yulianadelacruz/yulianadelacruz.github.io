@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/flores.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo al contenedor */
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+}
+
+.header {
+    background-color: #FFD3E6; /* Color de fondo de la cabecera */
+    position: fixed; /* Posición fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    z-index: 9999; /* Capa superior */
+}
+
+.menu {
+    list-style: none; /* Quitar las viñetas de la lista */
+    padding: 20px;
+    margin: 0;
+    display: flex; /* Mostrar los elementos del menú en línea */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+.menu li {
+    margin-right: 10px; /* Margen derecho entre los elementos del menú */
+}
+
+.menu li a {
+    color: #000000; /* Color del texto del menú */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    padding: 10px; /* Espaciado interno del enlace */
+    font-size: 30px; /* Tamaño de fuente del enlace */
+}
+
+.menu li a:hover {
+    color: #333333; /* Color del texto del menú al pasar el ratón por encima */
+}
+
+.menu li:nth-child(1) a:hover {
+    color: #FF0000; /* Color al pasar el ratón por encima de la opción "Inicio" */
+}
+
+.menu li:nth-child(2) a:hover {
+    color: #00FF00; /* Color al pasar el ratón por encima de la opción "Los caballos" */
+}
+
+.menu li:nth-child(3) a:hover {
+    color: #0000FF; /* Color al pasar el ratón por encima de la opción "Alimentación" */
+}
+
+.menu li:nth-child(4) a:hover {
+    color: #FF00FF; /* Color al pasar el ratón por encima de la opción "Cuidados" */
+}
+
+.menu li:nth-child(5) a:hover {
+    color: #FFFF00; /* Color al pasar el ratón por encima de la opción "Precaución" */
+}
+
+.menu li:nth-child(6) a:hover {
+    color: #00FFFF; /* Color al pasar el ratón por encima de la opción "Preguntas" */
+}
+
+.menu li:nth-child(7) a:hover {
+    color: #FF8000; /* Color al pasar el ratón por encima de la opción "Contacto" */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente del contenido */
+    padding: 20px; /* Espaciado interno del contenido */
+    border-radius: 10px; /* Radio de las esquinas del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenido */
+    transform: scale(0.75); /* Escala del contenido al 75% */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el texto */
+    font-size: 30px; /* Tamaño de fuente del contenido */
+}
+
+.content h1 {
+    color: #333; /* Color del título h1 */
+    font-size: 40px; /* Tamaño de fuente del título h1 */
+    margin-bottom: 30px; /* Margen inferior del título h1 */
+}
+
+.content h2 {
+    color: #666; /* Color del título h2 */
+    font-size: 36px; /* Tamaño de fuente del título h2 */
+    margin-bottom: 20px; /* Margen inferior del título h2 */
+}
+
+.content ul {
+    list-style: disc; /* Estilo de viñetas para la lista */
+    margin-left: 20px; /* Sangría izquierda de la lista */
+    margin-bottom: 15px; /* Margen inferior de la lista */
+}
+
+.content li {
+    margin-bottom: 10px; /* Margen inferior de los elementos de la lista */
+}
+
+.content strong {
+    color: #333; /* Color del texto en negrita */
+    font-size: 32px; /* Tamaño de fuente del texto en negrita */
+}
+
+.content p {
+    margin-bottom: 20px; /* Margen inferior del párrafo */
+    font-size: 28px; /* Tamaño de fuente del párrafo */
+}

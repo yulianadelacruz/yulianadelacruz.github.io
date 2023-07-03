@@ -1,0 +1,159 @@
+/*---------------------------------------------------- cabecera y menús -----------------------------------------*/
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/flores.jpg); /* Imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo al contenedor */
+  background-attachment: fixed; /* Fijar la imagen de fondo */
+}
+
+/* Estilos para la cabecera */
+.header {
+  background-color: #FFD3E6; /* Color de fondo de la cabecera */
+  position: fixed; /* Posición fija en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ancho completo */
+  z-index: 9999; /* Capa superior */
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+  list-style: none; /* Quitar las viñetas de la lista */
+  padding: 20px;
+  margin: 0;
+  display: flex; /* Mostrar los elementos del menú en línea */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+.menu li {
+  margin-right: 10px; /* Margen derecho entre los elementos del menú */
+}
+
+.menu li a {
+  color: #000000; /* Color del texto del menú */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  padding: 10px; /* Espaciado interno del enlace */
+  font-size: 30px; /* Tamaño de fuente del enlace */
+}
+
+.menu li a:hover {
+  color: #333333; /* Color del texto del menú al pasar el ratón por encima */
+}
+
+.menu li:nth-child(1) a:hover {
+  color: #FF0000; /* Color al pasar el ratón por encima de la opción "Inicio" */
+}
+
+.menu li:nth-child(2) a:hover {
+  color: #00FF00; /* Color al pasar el ratón por encima de la opción "Los caballos" */
+}
+
+.menu li:nth-child(3) a:hover {
+  color: #0000FF; /* Color al pasar el ratón por encima de la opción "Alimentación" */
+}
+
+.menu li:nth-child(4) a:hover {
+  color: #FF00FF; /* Color al pasar el ratón por encima de la opción "Cuidados" */
+}
+
+.menu li:nth-child(5) a:hover {
+  color: #FFFF00; /* Color al pasar el ratón por encima de la opción "Precaución" */
+}
+
+.menu li:nth-child(6) a:hover {
+  color: #00FFFF; /* Color al pasar el ratón por encima de la opción "Preguntas" */
+}
+
+.menu li:nth-child(7) a:hover {
+  color: #FF8000; /* Color al pasar el ratón por encima de la opción "Contacto" */
+}
+
+/* Estilos para el contenido */
+.content {
+  margin-top: 150px; /* Margen superior del contenido */
+  padding: 20px; /* Espaciado interno del contenido */
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semi transparente */
+  font-size: 20px; /* Tamaño de fuente del contenido */
+  line-height: 1.5; /* Espaciado entre líneas del contenido */
+  width: calc(100vw * 3 / 5); /* Ancho del contenido calculado en base al ancho de la ventana */
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
+  text-align: justify; /* Justificar el texto */
+}
+
+.content h1 {
+  /* font-size: calc(3vw / 7 * 1.2); */ /* Tamaño de fuente del título h1 */
+  margin-bottom: 20px; /* Margen inferior del título h1 */
+}
+
+.content h2 {
+  /* font-size: calc(3vw / 7 * 1.1); */ /* Tamaño de fuente del título h2 */
+  margin-bottom: 15px; /* Margen inferior del título h2 */
+}
+
+.content p {
+  margin-bottom: 15px; /* Margen inferior del párrafo */
+}
+
+.content ul {
+  margin-bottom: 15px; /* Margen inferior de la lista desordenada */
+}
+
+.content li {
+  margin-bottom: 10px; /* Margen inferior de los elementos de la lista */
+}
+
+/* Estilos para las imágenes a la izquierda */
+.image-left {
+  float: left; /* Alinear a la izquierda */
+  margin-right: 20px; /* Margen derecho de la imagen */
+}
+
+/* Estilos para las imágenes en el centro */
+.image-center {
+  text-align: center; /* Centrar horizontalmente */
+  margin-bottom: 20px; /* Margen inferior de la imagen */
+}
+
+/* Estilos para las imágenes a la derecha */
+.image-right {
+  float: right; /* Alinear a la derecha */
+  margin-left: 20px; /* Margen izquierdo de la imagen */
+}
+
+/* Estilos para las imágenes a la izquierda */
+.image-left {
+  float: left; /* Alinear a la izquierda */
+  margin-right: 20px; /* Margen derecho de la imagen */
+}
+
+.image-left img {
+  width: 800px; /* Ancho de la imagen */
+  height: auto; /* Altura automática proporcional al ancho */
+}
+
+/* Estilos para las imágenes en el centro */
+.image-center {
+  text-align: center; /* Centrar horizontalmente */
+  margin-bottom: 20px; /* Margen inferior de la imagen */
+}
+
+.image-center img {
+  width: 500px; /* Ancho de la imagen */
+  height: auto; /* Altura automática proporcional al ancho */
+}
+
+/* Estilos para las imágenes a la derecha */
+.image-right {
+  float: right; /* Alinear a la derecha */
+  margin-left: 20px; /* Margen izquierdo de la imagen */
+}
+
+.image-right img {
+  width: 500px; /* Ancho de la imagen */
+  height: auto; /* Altura automática proporcional al ancho */
+}

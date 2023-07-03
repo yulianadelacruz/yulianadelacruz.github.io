@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/flores.jpg); /* Establece la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+  background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
+
+.header {
+  background-color: #FFD3E6; /* Establece el color de fondo de la cabecera */
+  position: fixed; /* Fija la posición de la cabecera */
+  top: 0;
+  left: 0;
+  width: 100%; /* Establece el ancho de la cabecera al 100% del contenedor */
+  z-index: 9999; /* Establece la posición en el eje Z */
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra los elementos del menú horizontalmente */
+}
+
+.menu li {
+  margin-right: 10px; /* Establece un margen derecho entre los elementos del menú */
+}
+
+.menu li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.menu li a:hover {
+  color: #333333; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+.menu li:nth-child(1) a:hover {
+  color: #FF0000; /* Cambia el color del texto de la primera opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(2) a:hover {
+  color: #00FF00; /* Cambia el color del texto de la segunda opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(3) a:hover {
+  color: #0000FF; /* Cambia el color del texto de la tercera opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(4) a:hover {
+  color: #FF00FF; /* Cambia el color del texto de la cuarta opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(5) a:hover {
+  color: #FFFF00; /* Cambia el color del texto de la quinta opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(6) a:hover {
+  color: #00FFFF; /* Cambia el color del texto de la sexta opción al pasar el ratón por encima */
+}
+
+.menu li:nth-child(7) a:hover {
+  color: #FF8000; /* Cambia el color del texto de la séptima opción al pasar el ratón por encima */
+}
+
+.content {
+  width: 50%; /* Establece el ancho del contenido al 50% del contenedor */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  background-color: rgba(255, 255, 255, 0.0); /* Establece un fondo transparente para el contenido */
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos del formulario verticalmente */
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.en {
+  padding: 10px 20px;
+  background-color: #bb00bb8c;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para el botón */
+input[type="submit"]:hover,
+.en:hover {
+  background-color: #00FF00; /* Cambia el color de fondo del botón al pasar el ratón por encima */
+}
+
+input[type="submit"]:focus,
+.en:focus {
+  outline: none; /* Elimina el contorno al hacer foco en el botón */
+}
+
+form label {
+  font-size: 18px;
+  font-weight: bold;
+}

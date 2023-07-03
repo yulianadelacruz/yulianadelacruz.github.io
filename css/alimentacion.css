@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/flores.jpg); /* Imagen de fondo del cuerpo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: #FFD3E6; /* Color de fondo del encabezado */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #000000; /* Color del texto de los enlaces en el menú */
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.menu li a:hover {
+  color: #333333; /* Color del texto de los enlaces al pasar el cursor por encima */
+}
+
+.menu li:nth-child(1) a:hover {
+  color: #FF0000; /* Color del texto del primer enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(2) a:hover {
+  color: #00FF00; /* Color del texto del segundo enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(3) a:hover {
+  color: #0000FF; /* Color del texto del tercer enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(4) a:hover {
+  color: #FF00FF; /* Color del texto del cuarto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(5) a:hover {
+  color: #FFFF00; /* Color del texto del quinto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(6) a:hover {
+  color: #00FFFF; /* Color del texto del sexto enlace al pasar el cursor por encima */
+}
+
+.menu li:nth-child(7) a:hover {
+  color: #FF8000; /* Color del texto del séptimo enlace al pasar el cursor por encima */
+}
+
+.content {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #333333; /* Color del título principal */
+  margin-bottom: 20px;
+}
+
+.content table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo de la tabla */
+}
+
+.content th, .content td {
+  padding: 20px;
+  border: 2px solid #000000;
+  font-size: 18px;
+  color: #000000;
+}
+
+.content th {
+  background-color: #FFD3E6; /* Color de fondo de las celdas de encabezado de la tabla */
+}
